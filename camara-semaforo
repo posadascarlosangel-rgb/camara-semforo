@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicación de Grabación</title>
     <!-- Incluye el manifiesto de la PWA para la instalación -->
-    <link rel="manifest" href="/camara-semforo/manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <!-- Incluye la fuente Inter para un diseño moderno -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <!-- Incluye Tailwind CSS para un estilo rápido y responsivo -->
@@ -243,7 +243,7 @@
             // Registra el Service Worker
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/camara-semforo/service-worker.js')
+                    navigator.serviceWorker.register('./service-worker.js')
                         .then(registration => {
                             console.log('Service Worker registrado con éxito:', registration);
                         })
@@ -256,6 +256,3 @@
     </script>
 </body>
 </html>
-
-
-
